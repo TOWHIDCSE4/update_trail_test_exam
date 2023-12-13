@@ -1,0 +1,61 @@
+version: '3.8'
+
+networks:
+  app-network:
+
+volumes:
+  app-data:
+  dbdata:
+
+services:
+  db_mysql:
+    image: mysql:5.7
+    container_name: db_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: en_plus_secret
+      MYSQL_DATABASE: en_plus
+      MYSQL_USER: en_plus
+      MYSQL_PASSWORD: enplus_dev2022
+    ports:
+      - "3306:3306"
+    networks:
+      app-network:
+
+    volumes:
+      - dbdata:/var/lib/mysql
+  gateway:
+    image: nginx:1.21.6-alpine
+    container_name: gateway
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./:/var/www/enplus_php
+      - .docker/nginx:/etc/nginx/conf.d
+    networks:
+      app-network:
+
+  enplus_php:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: enplus_php
+    volumes:
+      - ./:/var/www/enplus_php
+      - .docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      app-network:
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db_mysql
+    environment:
+      PMA_HOST: db_mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 9001:80
+    networks:
+      app-network:

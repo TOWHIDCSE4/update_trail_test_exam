@@ -1,0 +1,242 @@
+#page_create_question_trial_test {
+    width: 90%;
+    margin-left: 10px;
+}
+
+.label-question {
+    width: 100px;
+    min-width: 100px;
+}
+
+.group-question {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.btn-ispeak {
+    margin-left: 20px;
+}
+
+.input-checkbox-question {
+    width: 45px;
+    height: 25px;
+}
+
+.text-area-disable-resize {
+    resize: vertical;
+    width: 100%;
+}
+
+ /*component question match*/
+
+.tab-question-text {
+    border: unset;
+    padding: 7px 15px 7px 15px;
+    min-width: 60px;
+}
+
+.tab-question-image {
+    border: unset;
+    padding: 9px 15px 5px 15px;
+    min-width: 80px;
+}
+
+.area-question-tabs{
+    border-bottom: 2px solid #51595C;
+    min-width: 140px;
+}
+
+.area-question-tabs li{
+    width: 50%;
+    border-left: 0 !important;
+    border-right: 0 !important;;
+    border-top: 0 !important;;
+    border-bottom: 1px solid #51595C;
+    border-radius: 0;
+    background-color: white;
+}
+
+.area-question-tabs li a {
+    color: #51595C !important;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.area-question-tabs li a:hover {
+    text-decoration: unset;
+}
+
+.area-question-tabs li a.active{
+    background-color: #51595C !important;
+    border-top: 0;
+    color: #FFFFFF !important;
+    border-bottom: unset !important;
+}
+
+.col-match-question {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.component-match-question {
+    padding-right: 10px;
+}
+
+.text-area-match-question {
+    width: 100%;
+    min-width: 140px;
+}
+
+.picture-area-match-question {
+    width: 100%;
+    min-width: 140px;
+    display: flex;
+    align-items: center;
+    min-height: 78px;
+    justify-content: center;
+}
+
+.component-match-question {
+    width: 30%;
+}
+
+.hr-match-question {
+    border-bottom: 3px solid #51595C;
+}
+
+.component_question {
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #51595C;
+    padding: 6px 3px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.trash-question {
+    position: absolute;
+    color: #51595C;
+    font-size: 25px !important;
+    top: 3px;
+    right: 3px;
+}
+
+.trash-typing-question {
+    color: #51595C;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.trash-main-question {
+    color: #51595C;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.input-question-millionaire {
+    width: 100%;
+    margin-right: 70px;
+}
+
+#area_file_content {
+    width: 100%;
+    margin-left: 10px;
+    align-items: center;
+    margin-top:20px;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+
+.img-question-view {
+    width: 100%;
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 5px;
+}
+
+.audio-question-view {
+    margin: 0 5px;
+    width: 100%;
+    min-width: 140px;
+    height: 41px;
+}
+
+.label-select-audio {
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.label-delete-file-audio {
+    width: 93px;
+}
+
+.group-input-question {
+    width: 100%;
+}
+.form-control-sm {
+    width: 100%;
+    border: 1px solid #51595C;
+}
+
+.input-short {
+    width: 30%;
+}
+
+input{
+    border: 1px solid #51595C;
+}
+
+.error-question {
+    color: #F44336;
+}
+
+.icon-action {
+    margin-left: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+.fa-grip-vertical {
+    cursor: move;
+}
+
+.hover-icon-action{
+    color: #51595C !important;
+}
+
+.hover-icon-action:hover {
+    background-color: #51595C !important;
+    color: #FFFFFF !important;
+}
+
+.hover-icon-add{
+    color: #08BF5A !important;
+}
+
+.hover-icon-add:hover {
+    background-color: #08BF5A !important;
+    color: #FFFFFF !important;
+}
+
+.hover-icon-delete{
+    color: #F44336 !important;
+    padding: 7px;
+}
+
+.hover-icon-delete:hover {
+    background-color: #F44336 !important;
+    color: #FFFFFF !important;
+    border-radius: 5px;
+}
+
+.check-voice {
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+}
